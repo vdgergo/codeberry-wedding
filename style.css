@@ -1,0 +1,89 @@
+/* --- HELPER COLORS --- */
+/* .header-wrapper {
+  background-color:brown;
+} 
+
+.cover {
+  background-color:rgb(111, 151, 112);
+}
+
+.locations{
+  background-color: cornflowerblue;
+}
+.program{
+  background-color:aquamarine;
+} */
+
+* {
+  box-sizing: border-box;
+ }
+
+/* --- FONT STYLES --- */
+html {
+  font-family: 'Mulish', sans-serif;
+  color:#444349;
+  font-size: 1.125rem;
+  text-align: center;
+}
+body {
+  line-height: 1.6;
+}
+h1,h2 {
+  font-family: 'Great Vibes', cursive;}
+h1 {
+  font-size: 10vw;
+}
+h2 {
+  font-size: 2.375rem;
+}
+h3 {
+  font-family: 'Libre Baskerville', serif;
+  font-size:  1.3125rem;
+  font-weight: 600;
+}
+footer {
+  font-size: 0.75rem;
+}
+a{
+  color:#bd806e
+}
+q{
+  font-style: italic;
+}
+.tagline, .date {
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 100;
+  font-size: 1.25rem;
+  letter-spacing: 0.15rem;
+}
+.alt-color {
+  color: #d2ba87;
+}
+footer,.tagline, .date {
+  color: hsla(0,0%,100%,.9);
+}
+.question-group .question {
+  font-weight: 700;
+}
+.faq h3 {
+  font-weight: 400;
+}
+.gifts p, .contacts p {
+  font-family: 'Libre Baskerville', serif;
+}
+
+/* --- BACKGROUNDS --- */
+html{
+  background-image: url("assets/wedding-landing-background.png")
+}
+.cover {
+  background: url("assets/wedding-landing-cover.jpg") no-repeat center;
+  background-size: cover;
+  height: 100vh;
+}
+footer {
+  background-color: #606060;
+}
+.program, .faq {
+  background-color: hsla(100,0%,0%,.6)
+}
