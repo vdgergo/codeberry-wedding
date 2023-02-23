@@ -31,46 +31,55 @@ body {
 h1,h2 {
   font-family: 'Great Vibes', cursive;}
 h1 {
-  font-size: 10vw;
+  font-size: 3.15rem;
 }
 h2 {
-  font-size: 2.375rem;
+  font-size: 3rem;
 }
 h3 {
   font-family: 'Libre Baskerville', serif;
-  font-size:  1.3125rem;
-  font-weight: 600;
+  font-size:  1.5rem;
+  font-weight: 700;
 }
 footer {
   font-size: 0.75rem;
+  color: hsla(0,0%,100%,.9);
 }
 a{
   color:#bd806e
 }
-q{
+.program-wrapper p{
   font-style: italic;
 }
+
 .tagline, .date {
   font-family: 'Libre Baskerville', serif;
   font-weight: 100;
   font-size: 1.25rem;
   letter-spacing: 0.15rem;
+  color: hsla(0,0%,100%,.9);
 }
 .alt-color {
   color: #d2ba87;
 }
-footer,.tagline, .date {
-  color: hsla(0,0%,100%,.9);
+.question-group{
+  text-align: left;
+} 
+.question-group h3 {
+  font-weight: 400;
+  text-align: center;
 }
 .question-group .question {
   font-weight: 700;
-}
-.faq h3 {
-  font-weight: 400;
+  margin-bottom: 0.5rem;
 }
 .gifts p, .contacts p {
   font-family: 'Libre Baskerville', serif;
 }
+.program-wrapper {
+  text-align: left;
+}
+
 
 /* --- BACKGROUNDS --- */
 html{
@@ -86,4 +95,84 @@ footer {
 }
 .program, .faq {
   background-color: hsla(100,0%,0%,.6)
+}
+.header-wrapper {
+  background-color:hsla(100,0%,0%,.6);
+}
+
+/* --- POSITIONS AND DIMENSIONS --- */
+header{
+  position: relative;
+  width: 100%;
+}
+.header-wrapper {
+  position: absolute;
+  top:50%;
+  left:50%;
+  width:100%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  padding:10px;
+}
+img {
+  height: 7.5rem;
+}
+
+footer {
+  height: 10vh;
+  position: relative;
+}
+
+.footer-wrapper{
+  position: absolute;
+  top:50%;
+  left:50%;
+  width:100%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  vertical-align: baseline;
+}
+
+section{
+  padding: 1.5rem 1rem;
+}
+h2,h3,img,p{
+  margin-bottom: 1.5rem;
+}
+
+
+
+/* --- DECORATIONS --- */
+
+.blurb::after {
+  content:"";
+  display: block;
+  background-color: #444349;
+  height: 0.1875rem;
+  width: 25vw;
+  margin: 1.125rem auto;
+}
+
+.question-group::after {
+  content:"";
+  display: block;
+  background-color: #d2ba87;
+  height: 0.1875rem;
+  width: 50vw;
+  margin: 1.125rem auto;
+}
+.tagline::after {
+  display:block;
+  content:"";
+  border-bottom: 1.5px solid white;
+  width:250px;
+  margin: 5px auto;
+}
+
+.date::after, .date::before {
+  display:inline-block;
+  content:"";
+  border-bottom: 1.5px solid white;
+  width:20px;
+  margin: 0.4rem;
 }
