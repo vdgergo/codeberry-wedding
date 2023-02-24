@@ -1,32 +1,14 @@
-/* --- HELPER COLORS --- */
-/* .header-wrapper {
-  background-color:brown;
-} 
-
-.cover {
-  background-color:rgb(111, 151, 112);
-}
-
-.locations{
-  background-color: cornflowerblue;
-}
-.program{
-  background-color:aquamarine;
-} */
-
 * {
   box-sizing: border-box;
  }
 
 /* --- FONT STYLES --- */
-html {
-  font-family: 'Mulish', sans-serif;
-  color:#444349;
-  font-size: 1.125rem;
-  text-align: center;
-}
 body {
   line-height: 1.6;
+  font-size: 1.125rem;
+  font-family: 'Mulish', sans-serif;
+  color:#444349;
+  text-align: center;
 }
 h1,h2 {
   font-family: 'Great Vibes', cursive;}
@@ -41,17 +23,14 @@ h3 {
   font-size:  1.5rem;
   font-weight: 700;
 }
-footer {
-  font-size: 0.75rem;
+a{
+  color:#bd806e;
+  text-decoration: none;
+}
+small {
+  font-size: 0.875rem;
   color: hsla(0,0%,100%,.9);
 }
-a{
-  color:#bd806e
-}
-.program-wrapper p{
-  font-style: italic;
-}
-
 .tagline, .date {
   font-family: 'Libre Baskerville', serif;
   font-weight: 100;
@@ -59,8 +38,12 @@ a{
   letter-spacing: 0.15rem;
   color: hsla(0,0%,100%,.9);
 }
-.alt-color {
-  color: #d2ba87;
+.program-wrapper p{
+  font-style: italic;
+  text-align: left;
+}
+.gifts p, .contacts p {
+  font-family: 'Libre Baskerville', serif;
 }
 .question-group{
   text-align: left;
@@ -73,13 +56,9 @@ a{
   font-weight: 700;
   margin-bottom: 0.5rem;
 }
-.gifts p, .contacts p {
-  font-family: 'Libre Baskerville', serif;
+.alt-color {
+  color: #d2ba87;
 }
-.program-wrapper {
-  text-align: left;
-}
-
 
 /* --- BACKGROUNDS --- */
 html{
@@ -90,17 +69,17 @@ html{
   background-size: cover;
   height: 100vh;
 }
-footer {
-  background-color: #606060;
+.header-wrapper {
+  background-color:hsla(100,0%,0%,.6);
 }
 .program, .faq {
   background-color: hsla(100,0%,0%,.6)
 }
-.header-wrapper {
-  background-color:hsla(100,0%,0%,.6);
+footer {
+  background-color: #606060;
 }
 
-/* --- POSITIONS AND DIMENSIONS --- */
+/* --- SIZES AND POSITIONS --- */
 header{
   position: relative;
   width: 100%;
@@ -117,12 +96,16 @@ header{
 img {
   height: 7.5rem;
 }
-
+h2,h3,img,section p{
+  margin-bottom: 1.5rem;
+}
+section{
+  padding: 1.5rem 1rem;
+}
 footer {
   height: 10vh;
   position: relative;
 }
-
 .footer-wrapper{
   position: absolute;
   top:50%;
@@ -130,20 +113,23 @@ footer {
   width:100%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  vertical-align: baseline;
 }
-
-section{
-  padding: 1.5rem 1rem;
-}
-h2,h3,img,p{
-  margin-bottom: 1.5rem;
-}
-
-
 
 /* --- DECORATIONS --- */
-
+.tagline::after {
+  display:block;
+  content:"";
+  border-bottom: 1.5px solid white;
+  width:225px;
+  margin: 5px auto;
+}
+.date::after, .date::before {
+  display:inline-block;
+  content:"";
+  border-bottom: 1.5px solid white;
+  width:20px;
+  margin: 0.4rem;
+}
 .blurb::after {
   content:"";
   display: block;
@@ -152,7 +138,6 @@ h2,h3,img,p{
   width: 25vw;
   margin: 1.125rem auto;
 }
-
 .question-group::after {
   content:"";
   display: block;
@@ -160,19 +145,4 @@ h2,h3,img,p{
   height: 0.1875rem;
   width: 50vw;
   margin: 1.125rem auto;
-}
-.tagline::after {
-  display:block;
-  content:"";
-  border-bottom: 1.5px solid white;
-  width:250px;
-  margin: 5px auto;
-}
-
-.date::after, .date::before {
-  display:inline-block;
-  content:"";
-  border-bottom: 1.5px solid white;
-  width:20px;
-  margin: 0.4rem;
 }
