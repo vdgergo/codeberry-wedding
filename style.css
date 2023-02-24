@@ -150,6 +150,11 @@ footer {
 }
 
 /* --- DECORATIONS --- */
+a:hover {
+color: #eda087;
+transition: color 0.15s ease-in-out;
+}
+
 .tagline::after {
   display: block;
   content: "";
