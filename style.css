@@ -1,148 +1,247 @@
 * {
   box-sizing: border-box;
- }
+}
 
 /* --- FONT STYLES --- */
 body {
   line-height: 1.6;
   font-size: 1.125rem;
   font-family: 'Mulish', sans-serif;
-  color:#444349;
+  color: #444349;
   text-align: center;
 }
-h1,h2 {
-  font-family: 'Great Vibes', cursive;}
+
+h1,
+h2 {
+  font-family: 'Great Vibes', cursive;
+}
+
 h1 {
   font-size: 3.15rem;
 }
+
 h2 {
   font-size: 3rem;
 }
+
 h3 {
   font-family: 'Libre Baskerville', serif;
-  font-size:  1.5rem;
+  font-size: 1.5rem;
   font-weight: 700;
 }
-a{
-  color:#bd806e;
+
+a {
+  color: #bd806e;
   text-decoration: none;
 }
+
 small {
   font-size: 0.875rem;
-  color: hsla(0,0%,100%,.9);
+  color: hsla(0, 0%, 100%, .9);
 }
-.tagline, .date {
+
+.tagline,
+.date {
   font-family: 'Libre Baskerville', serif;
   font-weight: 100;
   font-size: 1.25rem;
   letter-spacing: 0.15rem;
-  color: hsla(0,0%,100%,.9);
+  color: hsla(0, 0%, 100%, .9);
 }
-.program-wrapper p{
+
+.program-wrapper p {
   font-style: italic;
+}
+
+.program-wrapper {
   text-align: left;
 }
-.gifts p, .contacts p {
+
+.gifts p,
+.contacts p {
   font-family: 'Libre Baskerville', serif;
 }
-.question-group{
+
+.question-group {
   text-align: left;
-} 
+}
+
 .question-group h3 {
   font-weight: 400;
   text-align: center;
 }
+
 .question-group .question {
   font-weight: 700;
   margin-bottom: 0.5rem;
 }
+
 .alt-color {
   color: #d2ba87;
 }
 
 /* --- BACKGROUNDS --- */
-html{
+html {
   background-image: url("assets/wedding-landing-background.png")
 }
+
 .cover {
   background: url("assets/wedding-landing-cover.jpg") no-repeat center;
   background-size: cover;
   height: 100vh;
 }
+
 .header-wrapper {
-  background-color:hsla(100,0%,0%,.6);
+  background-color: hsla(100, 0%, 0%, .6);
 }
-.program, .faq {
-  background-color: hsla(100,0%,0%,.6)
+
+.program,
+.faq {
+  background-color: hsla(100, 0%, 0%, .6)
 }
+
 footer {
   background-color: #606060;
 }
 
 /* --- SIZES AND POSITIONS --- */
-header{
+header {
   position: relative;
   width: 100%;
 }
+
 .header-wrapper {
   position: absolute;
-  top:50%;
-  left:50%;
-  width:100%;
+  top: 50%;
+  left: 50%;
+  width: 100%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  padding:10px;
+  padding: 10px;
 }
+
 img {
   height: 7.5rem;
 }
-h2,h3,img,section p{
+
+h2,
+h3,
+img,
+section p {
   margin-bottom: 1.5rem;
 }
-section{
+
+section {
   padding: 1.5rem 1rem;
 }
+
 footer {
   height: 10vh;
   position: relative;
 }
-.footer-wrapper{
+
+.footer-wrapper {
   position: absolute;
-  top:50%;
-  left:50%;
-  width:100%;
+  top: 50%;
+  left: 50%;
+  width: 100%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 
 /* --- DECORATIONS --- */
 .tagline::after {
-  display:block;
-  content:"";
+  display: block;
+  content: "";
   border-bottom: 1.5px solid white;
-  width:225px;
+  width: 225px;
   margin: 5px auto;
 }
-.date::after, .date::before {
-  display:inline-block;
-  content:"";
+
+.date::after,
+.date::before {
+  display: inline-block;
+  content: "";
   border-bottom: 1.5px solid white;
-  width:20px;
+  width: 20px;
   margin: 0.4rem;
 }
+
 .blurb::after {
-  content:"";
+  content: "";
   display: block;
   background-color: #444349;
   height: 0.1875rem;
   width: 25vw;
   margin: 1.125rem auto;
 }
+
 .question-group::after {
-  content:"";
+  content: "";
   display: block;
   background-color: #d2ba87;
   height: 0.1875rem;
   width: 50vw;
   margin: 1.125rem auto;
+}
+
+/* --- MEDIA QUERIES FOR DESKTOP LAYOUT --- */
+/* -- HEADER -- */
+
+@media (min-width:768px) {
+  .header-wrapper {
+    width: 50vw;
+    border-radius: 5px;
+  }
+
+  .tagline {
+    text-transform: uppercase;
+  }
+
+  h1 {
+    font-size: 7rem;
+  }
+
+  /* -- PROGRAM SECTION -- */
+  .program-wrapper {
+    width: fit-content;
+    margin: 0 auto;
+  }
+
+  .blurb {
+    width: 30%;
+    padding: 1.5rem;
+    margin: 0.5rem;
+    display: inline-block;
+  }
+
+  .blurb::after {
+    display: none;
+  }
+
+  /* -- LOCATION SECTION -- */
+  .locations {
+    justify-content: center;
+  }
+
+  /* -- FAQ SECTION -- */
+  .question {
+    justify-content: center;
+  }
+
+  .question-group h3 {
+    text-align: left;
+  }
+
+  .question-group {
+    width: 30%;
+    display: inline-block;
+    padding: 1.5rem;
+    margin: 0.5rem;
+    vertical-align: top;
+  }
+
+  .question-group::after {
+    display: none;
+  }
 }
